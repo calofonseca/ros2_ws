@@ -1,0 +1,20 @@
+[0.624s] Invoking command in '/home/tiago/ros2_ws/build/my_robot_controller': PYTHONPATH=/home/tiago/ros2_ws/build/my_robot_controller/prefix_override:/home/tiago/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/tiago/ros2_ws/build/my_robot_controller/build --no-deps install_data
+[0.832s] running develop
+[0.962s] running egg_info
+[0.962s] writing my_robot_controller.egg-info/PKG-INFO
+[0.962s] writing dependency_links to my_robot_controller.egg-info/dependency_links.txt
+[0.962s] writing entry points to my_robot_controller.egg-info/entry_points.txt
+[0.962s] writing requirements to my_robot_controller.egg-info/requires.txt
+[0.962s] writing top-level names to my_robot_controller.egg-info/top_level.txt
+[0.964s] reading manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[0.964s] writing manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[0.965s] running build_ext
+[0.965s] Creating /home/tiago/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my-robot-controller.egg-link (link to .)
+[0.966s] Installing draw_circle script to /home/tiago/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[0.966s] Installing pose_subscriber script to /home/tiago/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[0.966s] Installing test_node script to /home/tiago/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[0.966s] Installing turtle_controller script to /home/tiago/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[0.966s] 
+[0.967s] Installed /home/tiago/ros2_ws/build/my_robot_controller
+[0.967s] running install_data
+[0.996s] Invoked command in '/home/tiago/ros2_ws/build/my_robot_controller' returned '0': PYTHONPATH=/home/tiago/ros2_ws/build/my_robot_controller/prefix_override:/home/tiago/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/tiago/ros2_ws/build/my_robot_controller/build --no-deps install_data

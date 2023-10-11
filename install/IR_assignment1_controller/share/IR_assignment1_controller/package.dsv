@@ -1,0 +1,6 @@
+source;share/IR_assignment1_controller/hook/pythonpath.ps1
+source;share/IR_assignment1_controller/hook/pythonpath.dsv
+source;share/IR_assignment1_controller/hook/pythonpath.sh
+source;share/IR_assignment1_controller/hook/ament_prefix_path.ps1
+source;share/IR_assignment1_controller/hook/ament_prefix_path.dsv
+source;share/IR_assignment1_controller/hook/ament_prefix_path.sh
