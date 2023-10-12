@@ -21,7 +21,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "wall_follower = my_robot_controller.wall_follower:main"
+            "wall_follower = IR_assignment1_controller.wall_follower:main"
         ],
     },
 )

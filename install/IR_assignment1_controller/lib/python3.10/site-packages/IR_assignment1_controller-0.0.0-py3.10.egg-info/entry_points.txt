@@ -1,3 +1,3 @@
 [console_scripts]
-wall_follower = my_robot_controller.wall_follower:main
+wall_follower = IR_assignment1_controller.wall_follower:main
 

@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/IR_assignment1_controller/IR_assignment1_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/IR_assignment1_controller/IR_assignment1_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/IR_assignment1_controller/IR_assignment1_controller.egg-info/entry_points.txt
+writing requirements to ../../build/IR_assignment1_controller/IR_assignment1_controller.egg-info/requires.txt
+writing top-level names to ../../build/IR_assignment1_controller/IR_assignment1_controller.egg-info/top_level.txt
+reading manifest file '../../build/IR_assignment1_controller/IR_assignment1_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/IR_assignment1_controller/IR_assignment1_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying IR_assignment1_controller/wall_follower.py -> /home/tiago/ros2_ws/build/IR_assignment1_controller/build/lib/IR_assignment1_controller
+running install
+running install_lib
+copying /home/tiago/ros2_ws/build/IR_assignment1_controller/build/lib/IR_assignment1_controller/wall_follower.py -> /home/tiago/ros2_ws/install/IR_assignment1_controller/lib/python3.10/site-packages/IR_assignment1_controller
+byte-compiling /home/tiago/ros2_ws/install/IR_assignment1_controller/lib/python3.10/site-packages/IR_assignment1_controller/wall_follower.py to wall_follower.cpython-310.pyc
+running install_data
+copying launch/simulation_launch.py -> /home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/launch
+running install_egg_info
+removing '/home/tiago/ros2_ws/install/IR_assignment1_controller/lib/python3.10/site-packages/IR_assignment1_controller-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/IR_assignment1_controller/IR_assignment1_controller.egg-info to /home/tiago/ros2_ws/install/IR_assignment1_controller/lib/python3.10/site-packages/IR_assignment1_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing wall_follower script to /home/tiago/ros2_ws/install/IR_assignment1_controller/lib/IR_assignment1_controller
+writing list of installed files to '/home/tiago/ros2_ws/build/IR_assignment1_controller/install.log'
