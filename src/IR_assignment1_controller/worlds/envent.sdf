@@ -319,6 +319,7 @@
         </model>
 
         <model name='vehicle_blue' canonical_link='chassis'>
+            <!--plugin filename="libRandomPosePlugin.so" name="random_pose_plugin"/-->
             <pose relative_to='world'>0 0 0 0 0 0</pose>   <!--the pose is relative to the world by default-->
 
             <frame name="lidar_frame" attached_to='lidar_housing'>
@@ -326,16 +327,13 @@
             </frame>
 
             <link name='lidar_housing'>
-                <pose relative_to='chassis'>0.0 0 0.1 0 0 0</pose> <!-- Adjust this pose to position the housing on top of the robot -->
+                <pose relative_to='chassis'>0.0 0 0.08 0 0 0</pose> <!-- Adjust this pose to position the housing on top of the robot -->
                 <inertial>
-                    <mass>0.1</mass> <!-- Adjust mass accordingly -->
+                    <mass>0.1</mass>
                     <inertia>
-                        <ixx>0.005</ixx>
-                        <ixy>0</ixy>
-                        <ixz>0</ixz>
-                        <iyy>0.005</iyy>
-                        <iyz>0</iyz>
-                        <izz>0.005</izz>
+                      <ixx>0.000166667</ixx>
+                      <iyy>0.000166667</iyy>
+                      <izz>0.000166667</izz>
                     </inertia>
                 </inertial>
                 <visual name='visual'>
@@ -370,19 +368,19 @@
                 <inertial> <!--inertial properties of the link mass, inertia matix-->
                     <mass>1.14395</mass>
                     <inertia>
-                        <ixx>0.126164</ixx>
-                        <ixy>0</ixy>
-                        <ixz>0</ixz>
-                        <iyy>0.416519</iyy>
-                        <iyz>0</iyz>
-                        <izz>0.481014</izz>
+                      <ixx>0.126164</ixx>
+                      <ixy>0</ixy>
+                      <ixz>0</ixz>
+                      <iyy>0.416519</iyy>
+                      <iyz>0</iyz>
+                      <izz>0.481014</izz>
                     </inertia>
                 </inertial>
                 <visual name='visual'>
                     <geometry>
                         <cylinder>
                             <radius>0.40</radius> <!-- Radius of the cylinder -->
-                            <length>0.10</length> <!-- Height of the cylinder -->
+                            <length>0.05</length> <!-- Height of the cylinder -->
                         </cylinder>
                     </geometry>
                     <!--let's add color to our link-->
@@ -396,7 +394,7 @@
                     <geometry>
                         <cylinder>
                             <radius>0.40</radius> <!-- Radius of the cylinder -->
-                            <length>0.10</length> <!-- Height of the cylinder -->
+                            <length>0.05</length> <!-- Height of the cylinder -->
                         </cylinder>
                     </geometry>
                 </collision>
@@ -407,10 +405,10 @@
                     <ray>
                     <scan>
                         <horizontal>
-                        <samples>640</samples>
+                        <samples>720</samples>
                         <resolution>1</resolution>
-                        <min_angle>-1.396263</min_angle>
-                        <max_angle>1.396263</max_angle>
+                        <min_angle>-3.1415</min_angle>
+                        <max_angle>3.1415</max_angle>
                         </horizontal>
                         <vertical>
                         <samples>1</samples>
@@ -428,21 +426,21 @@
                     <alwaysOn>1</alwaysOn>
                     <visualize>true</visualize>
                 </sensor>
-            </link>
+            </link>distance
 
             <!--let's build the left wheel-->
             <link name='left_wheel'>
                 <pose relative_to="chassis">-0.085 0.3 -0.085 -1.5707 0 0</pose> <!--angles are in radian-->
                 <inertial>
-                    <mass>2</mass>
-                    <inertia>
-                        <ixx>0.145833</ixx>
-                        <ixy>0</ixy>
-                        <ixz>0</ixz>
-                        <iyy>0.145833</iyy>
-                        <iyz>0</iyz>
-                        <izz>0.125</izz>
-                    </inertia>
+                  <mass>2</mass>
+                  <inertia>
+                    <ixx>0.145833</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.145833</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.125</izz>
+                  </inertia>
                 </inertial>
                 <visual name='visual'>
                     <geometry>
@@ -471,15 +469,15 @@
             <link name='right_wheel'>
                 <pose relative_to="chassis">-0.085 -0.3 -0.085 -1.5707 0 0</pose> <!--angles are in radian-->
                 <inertial>
-                    <mass>2</mass>
-                    <inertia>
-                        <ixx>0.145833</ixx>
-                        <ixy>0</ixy>
-                        <ixz>0</ixz>
-                        <iyy>0.145833</iyy>
-                        <iyz>0</iyz>
-                        <izz>0.125</izz>
-                    </inertia>
+                  <mass>2</mass>
+                  <inertia>
+                    <ixx>0.145833</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.145833</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.125</izz>
+                  </inertia>
                 </inertial>
                 <visual name='visual'>
                     <geometry>
@@ -512,15 +510,15 @@
             <link name='caster'>
                 <pose relative_to='caster_frame'/>
                 <inertial>
-                    <mass>2</mass>
-                    <inertia>
-                        <ixx>0.1</ixx>
-                        <ixy>0</ixy>
-                        <ixz>0</ixz>
-                        <iyy>0.1</iyy>
-                        <iyz>0</iyz>
-                        <izz>0.1</izz>
-                    </inertia>
+                  <mass>10</mass>
+                  <inertia>
+                    <ixx>0.1</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.1</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.1</izz>
+                  </inertia>
                 </inertial>
                 <visual name='visual'>
                     <geometry>
@@ -1770,7 +1768,7 @@
                 <match field="data">16777235</match>
             </input>
             <output type="ignition.msgs.Twist" topic="/cmd_vel">
-                linear: {x: 0.5}, angular: {z: 0.0}
+                linear: {x: 1.5}, angular: {z: 0.0}
             </output>
         </plugin>
 
@@ -1781,7 +1779,7 @@
                 <match field="data">16777237</match>
             </input>
             <output type="ignition.msgs.Twist" topic="/cmd_vel">
-                linear: {x: -0.5}, angular: {z: 0.0}
+                linear: {x: -1.5}, angular: {z: 0.0}
             </output>
         </plugin>
 

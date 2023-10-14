@@ -10,6 +10,7 @@ setup.py
 ../../build/IR_assignment1_controller/IR_assignment1_controller.egg-info/zip-safe
 IR_assignment1_controller/__init__.py
 IR_assignment1_controller/wall_follower.py
+IR_assignment1_controller/wall_follower2.py
 launch/simulation_launch.py
 resource/IR_assignment1_controller
 test/test_copyright.py
