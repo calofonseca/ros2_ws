@@ -6,7 +6,7 @@ def generate_launch_description():
     return LaunchDescription([
         # Launch Ignition Gazebo with the specified environment SDF
         ExecuteProcess(
-            cmd=['./launch_ignition.sh', 'envent.sdf'],
+            cmd=['./launch_ignition.sh', 'environment.sdf'],
             output='screen'
         ),
         # Launch the parameter_bridge for cmd_vel
@@ -36,7 +36,6 @@ def generate_launch_description():
     ])
 
 #ros2 launch IR_assignment1_controller simulation_launch.py
-
 #cd ros2_ws/src/IR_assignment1_controller/worlds/
 #ign gazebo envent.sdf 
 #ros2 run IR_assignment1_controller wall_follower 

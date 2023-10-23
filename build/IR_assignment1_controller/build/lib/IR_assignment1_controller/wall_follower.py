@@ -4,19 +4,25 @@ from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
 import time 
+import random
 
 class WallFollowingNode(Node):
     def __init__(self):
         super().__init__('wall_following_node')
+
+        self.cmd_pub = self.create_publisher(
+            Twist,
+            '/cmd_vel',
+            10
+        )
+
+        self.randomize_robot_position()
+
+
         self.laser_sub = self.create_subscription(
             LaserScan,
             '/lidar',
             self.laser_callback,
-            10
-        )
-        self.cmd_pub = self.create_publisher(
-            Twist,
-            '/cmd_vel',
             10
         )
 
@@ -30,8 +36,8 @@ class WallFollowingNode(Node):
         self.following_side = None  # 'left' or 'right'
         self.start_time = None
 
-        self.Kp = 1.0
-        self.Ki = 0.0
+        self.Kp = 2.5
+        self.Ki = 0.02
         self.Kd = 0.2
         self.distance = 1
         
@@ -116,7 +122,6 @@ class WallFollowingNode(Node):
             self.send_command(0.0, 0.0)
             time.sleep(1.0)
 
-
     def wander(self):
         # Logic to wander around
         self.send_command(0.5, 0.0)
@@ -185,13 +190,19 @@ class WallFollowingNode(Node):
             self.Ki * self.error_sum +
             self.Kd * (error - self.prev_error)
         )
-
+        speed = 1
         # Limiting speed and control output
-        speed = min(max(0.5, 1.2 - abs(error)), 1.2)  # Clip speed between 0.5 and 1.5
-        speed = 1.0
+        if error < 0.10:
+            speed = 2.0
+        elif error >= 0.10 and error < 0.15:
+            speed = 1.6
+        elif error >= 0.15 and error < 0.25:
+            speed = 1.3
+        elif error >= 0.25 and error < 0.40:
+            speed = 1.0
+        elif error >= 0.40:
+            speed = 0.5
         self.get_logger().info(f"Control Out: " + str(control_output))
-        #control_output = min(max(control_output, -1.0), 1.0)  # Clip control output between -1 and 1
-        #self.get_logger().info(f"Control Output: " + str(control_output))
 
         
         self.prev_error = error
@@ -226,6 +237,11 @@ class WallFollowingNode(Node):
 
         # Output KPIs
         self.get_logger().info(f"KPIs:\nLoss: {loss}\nRMSE: {RMSE}\nMError: {MError}\nLTime: {LTime} seconds")
+
+    def randomize_robot_position(self):
+        #self.send_command(random.uniform(0.2, 1.5), random.uniform(0.2, 1.5))
+        #time.sleep(random.uniform(2.0, 6.0))
+        self.send_command(0,0)
 
 def main():
     rclpy.init()
