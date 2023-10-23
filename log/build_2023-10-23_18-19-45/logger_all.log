@@ -1,0 +1,177 @@
+[1.120s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.120s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f28d8886aa0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f28d8886590>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f28d8886590>>)
+[1.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.172s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tiago/ros2_ws'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.184s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.185s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.186s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/IR_assignment1_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/IR_assignment1_controller) by extension 'ignore'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/IR_assignment1_controller) by extension 'ignore_ament_install'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/IR_assignment1_controller) by extensions ['colcon_pkg']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/IR_assignment1_controller) by extension 'colcon_pkg'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/IR_assignment1_controller) by extensions ['colcon_meta']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/IR_assignment1_controller) by extension 'colcon_meta'
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/IR_assignment1_controller) by extensions ['ros']
+[1.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/IR_assignment1_controller) by extension 'ros'
+[1.191s] DEBUG:colcon.colcon_core.package_identification:Package 'src/IR_assignment1_controller' with type 'ros.ament_python' and name 'IR_assignment1_controller'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_controller) by extension 'ignore'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_controller) by extension 'ignore_ament_install'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_controller) by extensions ['colcon_pkg']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_controller) by extension 'colcon_pkg'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_controller) by extensions ['colcon_meta']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_controller) by extension 'colcon_meta'
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_controller) by extensions ['ros']
+[1.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_controller) by extension 'ros'
+[1.192s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_controller' with type 'ros.ament_python' and name 'my_robot_controller'
+[1.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.331s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/tiago/ros2_ws/install
+[1.349s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 302 installed packages in /opt/ros/iron
+[1.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'IR_assignment1_controller' build argument 'cmake_args' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'IR_assignment1_controller' build argument 'cmake_target' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'IR_assignment1_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'IR_assignment1_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'IR_assignment1_controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'IR_assignment1_controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'IR_assignment1_controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'IR_assignment1_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'IR_assignment1_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.459s] DEBUG:colcon.colcon_core.verb:Building package 'IR_assignment1_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tiago/ros2_ws/build/IR_assignment1_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tiago/ros2_ws/install/IR_assignment1_controller', 'merge_install': False, 'path': '/home/tiago/ros2_ws/src/IR_assignment1_controller', 'symlink_install': False, 'test_result_base': None}
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_args' from command line to 'None'
+[1.477s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_target' from command line to 'None'
+[1.477s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.477s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.477s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.477s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.477s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.477s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.477s] Level 5:colcon.colcon_core.verb:set package 'my_robot_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.477s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tiago/ros2_ws/build/my_robot_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tiago/ros2_ws/install/my_robot_controller', 'merge_install': False, 'path': '/home/tiago/ros2_ws/src/my_robot_controller', 'symlink_install': False, 'test_result_base': None}
+[1.495s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.516s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.516s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tiago/ros2_ws/src/IR_assignment1_controller' with build type 'ament_python'
+[1.517s] Level 1:colcon.colcon_core.shell:create_environment_hook('IR_assignment1_controller', 'ament_prefix_path')
+[1.539s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/hook/ament_prefix_path.ps1'
+[1.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/hook/ament_prefix_path.dsv'
+[1.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/hook/ament_prefix_path.sh'
+[1.559s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.559s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.611s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tiago/ros2_ws/src/my_robot_controller' with build type 'ament_python'
+[1.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_controller', 'ament_prefix_path')
+[1.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tiago/ros2_ws/install/my_robot_controller/share/my_robot_controller/hook/ament_prefix_path.ps1'
+[1.628s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tiago/ros2_ws/install/my_robot_controller/share/my_robot_controller/hook/ament_prefix_path.dsv'
+[1.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tiago/ros2_ws/install/my_robot_controller/share/my_robot_controller/hook/ament_prefix_path.sh'
+[1.646s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.646s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.986s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tiago/ros2_ws/src/IR_assignment1_controller'
+[2.003s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.003s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.346s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tiago/ros2_ws/src/my_robot_controller'
+[2.365s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.365s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.812s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tiago/ros2_ws/src/IR_assignment1_controller': PYTHONPATH=/home/tiago/ros2_ws/build/IR_assignment1_controller/prefix_override:/home/tiago/ros2_ws/install/IR_assignment1_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/IR_assignment1_controller build --build-base /home/tiago/ros2_ws/build/IR_assignment1_controller/build install --record /home/tiago/ros2_ws/build/IR_assignment1_controller/install.log --single-version-externally-managed
+[2.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tiago/ros2_ws/src/my_robot_controller': PYTHONPATH=/home/tiago/ros2_ws/build/my_robot_controller/prefix_override:/home/tiago/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/tiago/ros2_ws/build/my_robot_controller/build install --record /home/tiago/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed
+[3.153s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tiago/ros2_ws/src/IR_assignment1_controller' returned '0': PYTHONPATH=/home/tiago/ros2_ws/build/IR_assignment1_controller/prefix_override:/home/tiago/ros2_ws/install/IR_assignment1_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/IR_assignment1_controller build --build-base /home/tiago/ros2_ws/build/IR_assignment1_controller/build install --record /home/tiago/ros2_ws/build/IR_assignment1_controller/install.log --single-version-externally-managed
+[3.172s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/IR_assignment1_controller' for CMake module files
+[3.172s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/IR_assignment1_controller' for CMake config files
+[3.173s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/IR_assignment1_controller/lib'
+[3.173s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/IR_assignment1_controller/bin'
+[3.173s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/IR_assignment1_controller/lib/pkgconfig/IR_assignment1_controller.pc'
+[3.174s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/IR_assignment1_controller/lib/python3.10/site-packages'
+[3.174s] Level 1:colcon.colcon_core.shell:create_environment_hook('IR_assignment1_controller', 'pythonpath')
+[3.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/hook/pythonpath.ps1'
+[3.190s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/hook/pythonpath.dsv'
+[3.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/hook/pythonpath.sh'
+[3.191s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/IR_assignment1_controller/bin'
+[3.191s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(IR_assignment1_controller)
+[3.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/package.ps1'
+[3.208s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/package.dsv'
+[3.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/package.sh'
+[3.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/package.bash'
+[3.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/tiago/ros2_ws/install/IR_assignment1_controller/share/IR_assignment1_controller/package.zsh'
+[3.210s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tiago/ros2_ws/install/IR_assignment1_controller/share/colcon-core/packages/IR_assignment1_controller)
+[3.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tiago/ros2_ws/src/my_robot_controller' returned '0': PYTHONPATH=/home/tiago/ros2_ws/build/my_robot_controller/prefix_override:/home/tiago/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/tiago/ros2_ws/build/my_robot_controller/build install --record /home/tiago/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed
+[3.229s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/my_robot_controller' for CMake module files
+[3.229s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/my_robot_controller' for CMake config files
+[3.230s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/my_robot_controller/lib'
+[3.230s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/my_robot_controller/bin'
+[3.230s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/my_robot_controller/lib/pkgconfig/my_robot_controller.pc'
+[3.231s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages'
+[3.231s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_controller', 'pythonpath')
+[3.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tiago/ros2_ws/install/my_robot_controller/share/my_robot_controller/hook/pythonpath.ps1'
+[3.247s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tiago/ros2_ws/install/my_robot_controller/share/my_robot_controller/hook/pythonpath.dsv'
+[3.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tiago/ros2_ws/install/my_robot_controller/share/my_robot_controller/hook/pythonpath.sh'
+[3.248s] Level 1:colcon.colcon_core.environment:checking '/home/tiago/ros2_ws/install/my_robot_controller/bin'
+[3.248s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_controller)
+[3.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/tiago/ros2_ws/install/my_robot_controller/share/my_robot_controller/package.ps1'
+[3.265s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tiago/ros2_ws/install/my_robot_controller/share/my_robot_controller/package.dsv'
+[3.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/tiago/ros2_ws/install/my_robot_controller/share/my_robot_controller/package.sh'
+[3.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/tiago/ros2_ws/install/my_robot_controller/share/my_robot_controller/package.bash'
+[3.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/tiago/ros2_ws/install/my_robot_controller/share/my_robot_controller/package.zsh'
+[3.267s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tiago/ros2_ws/install/my_robot_controller/share/colcon-core/packages/my_robot_controller)
+[3.267s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.267s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.268s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.268s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.289s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.289s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.289s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.301s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.319s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tiago/ros2_ws/install/local_setup.ps1'
+[3.320s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tiago/ros2_ws/install/_local_setup_util_ps1.py'
+[3.321s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tiago/ros2_ws/install/setup.ps1'
+[3.338s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tiago/ros2_ws/install/local_setup.sh'
+[3.339s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tiago/ros2_ws/install/_local_setup_util_sh.py'
+[3.339s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tiago/ros2_ws/install/setup.sh'
+[3.357s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tiago/ros2_ws/install/local_setup.bash'
+[3.357s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tiago/ros2_ws/install/setup.bash'
+[3.374s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tiago/ros2_ws/install/local_setup.zsh'
+[3.374s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tiago/ros2_ws/install/setup.zsh'

@@ -1,0 +1,17 @@
+[1.181s] Invoking command in '/home/tiago/ros2_ws/build/IR_assignment1_controller': PYTHONPATH=/home/tiago/ros2_ws/build/IR_assignment1_controller/prefix_override:/home/tiago/ros2_ws/install/IR_assignment1_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/tiago/ros2_ws/build/IR_assignment1_controller/build --no-deps install_data
+[1.462s] running develop
+[1.621s] running egg_info
+[1.621s] writing IR_assignment1_controller.egg-info/PKG-INFO
+[1.621s] writing dependency_links to IR_assignment1_controller.egg-info/dependency_links.txt
+[1.621s] writing entry points to IR_assignment1_controller.egg-info/entry_points.txt
+[1.621s] writing requirements to IR_assignment1_controller.egg-info/requires.txt
+[1.621s] writing top-level names to IR_assignment1_controller.egg-info/top_level.txt
+[1.624s] reading manifest file 'IR_assignment1_controller.egg-info/SOURCES.txt'
+[1.624s] writing manifest file 'IR_assignment1_controller.egg-info/SOURCES.txt'
+[1.626s] running build_ext
+[1.626s] Creating /home/tiago/ros2_ws/install/IR_assignment1_controller/lib/python3.10/site-packages/IR-assignment1-controller.egg-link (link to .)
+[1.626s] Installing wall_follower script to /home/tiago/ros2_ws/install/IR_assignment1_controller/lib/IR_assignment1_controller
+[1.627s] 
+[1.627s] Installed /home/tiago/ros2_ws/build/IR_assignment1_controller
+[1.627s] running install_data
+[1.740s] Invoked command in '/home/tiago/ros2_ws/build/IR_assignment1_controller' returned '0': PYTHONPATH=/home/tiago/ros2_ws/build/IR_assignment1_controller/prefix_override:/home/tiago/ros2_ws/install/IR_assignment1_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/tiago/ros2_ws/build/IR_assignment1_controller/build --no-deps install_data
