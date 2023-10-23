@@ -78,7 +78,7 @@ colcon build
 ros2 run IR_assignment1_controller wall_follower 
 ```
 
-### Fourth Terminal
+### Fifth Terminal
 
 1) Run rviz2 to see the lidar measurments:
 ```
